@@ -5,21 +5,23 @@
 📌 **About the Project**
 I built a clean and professional portfolio website using HTML and CSS, aiming to showcase my skills in web development and embedded systems. This site reflects my commitment to delivering quality design with a smooth user experience, without relying on AI tools.
 
-🛠 **Technologies Used**
+## 🛠 Technologies Used
 
 * HTML — for page structure
 * CSS — for styling and layout
 
-🔗 **Live Demo**
+## 🔗 Live Demo
+
 \[Your live website link here]
 
 
 
-💡 **Future Enhancements**
+## 💡 Future Enhancements
 
 * Integrate a blog section to share my projects and learnings
 
-📬 **Contact**
+## 📬 Contact
+
 Feel free to reach out for feedback or collaboration!
 
 Email: [anet.george@email.com](mailto:anet.george@email.com)
