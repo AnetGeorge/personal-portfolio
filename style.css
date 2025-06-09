@@ -1,0 +1,627 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background: url('images/profile.jpg') ;
+  /*position: relative;*/
+  background-position: left center;
+  background-size: 950px auto; /* fixed width */
+
+  /*background-size: 90;  or 60% if using cover crops too much ..: contain*/
+}
+
+.hero-overlay {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0,0,0,0.5) 0%, rgba(0,0,0,1) 80%);
+  /*background-color: rgba(0, 0, 0, 0.5);*/
+  color: #fff;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+} 
+
+.hero-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Existing styles (update your current ones) */
+.hero-content {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;  /* Left align */
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left: 600px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.hero-text {
+  text-align: left;
+  max-width: 600px;
+}
+
+/* Optional: adjust spacing, font sizes on smaller screens */
+@media (max-width: 768px) {
+  .hero-content {
+    padding-left: 30px;
+    padding-right: 30px;
+    align-items: flex-start;
+    padding-top: 80px;
+  }
+
+  .hero-text h1 {
+    font-size: 40px;
+  }
+
+  .hero-text h2 {
+    font-size: 18px;
+  }
+
+  .hero-text p {
+    font-size: 16px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+.hero-text h3 {
+  font-size: 16px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.hero-text h1 {
+  font-size: 56px;
+  line-height: 1.2;
+  font-weight: 900;
+  margin: 10px 0;
+}
+
+.hero-text h1 span {
+  color: #fff;
+}
+
+.hero-text p {
+  font-size: 16px;
+  color: #ccc;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+}
+
+.btn {
+  background-color: #e63946;
+  padding: 12px 24px;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.3s;
+  
+}
+
+.btn:hover {
+  background-color: #c32432;
+}
+
+/* Top Navigation Bar */
+.top-nav {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  z-index: 10;
+}
+
+.top-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.top-nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  transition: color 0.3s ease;
+}
+
+.top-nav ul li a:hover,
+.top-nav ul li a.active {
+  color: #e63946; /* Red highlight on hover/active */
+}
+
+/* Special Style for Contact Me Button */
+.top-nav .contact-btn {
+  border: 1px solid #e63946;
+  padding: 6px 14px;
+  border-radius: 4px;
+  color: #e63946;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.top-nav .contact-btn:hover {
+  background-color: #e63946;
+  color: #fff;
+}
+
+
+/*....................*/
+
+
+/* Generic Section Styles */
+.section {
+  padding: 100px 50px;
+  text-align: center;
+}
+
+.about {
+  background-color: #000000;
+  color: #fff;
+}
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  padding: 0px;
+  flex-wrap: wrap;
+}
+
+.about-image img {
+  width: 280px;
+  height: 420px;
+  /*border-radius: 10px;*/
+  object-fit: cover;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  
+}
+
+.about-text {
+  max-width: 700px;
+  
+  
+}
+
+.about-text h3 {
+  color: #e63946;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: left;
+
+}
+.about-text h2 {
+  font-size: 36px;
+  margin: 10px 0 20px;
+  text-align: left;
+  color: white !important;
+}
+
+
+.about-text p {
+  font-size: 16px !important;
+  line-height: 1.7;
+  margin-bottom: 30px;
+  color: #d4cccce1!important;
+  text-align: left;
+}
+
+.about-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.about-info p {
+  font-size: 15px;
+  margin: 5px 0;
+  color: #ddd;
+}
+
+.btn1 {
+  background-color: #e63946;
+  padding: 12px 24px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  
+  
+}
+
+.btn1:hover {
+  background-color: #d62839;
+}
+
+
+/*
+.about {
+  background-color: #f4f4f4;
+}*/
+
+.skills {
+  background-color: #e8f0fe;
+}
+
+.projects {
+  background-color: #fff9e6;
+}
+
+.contact {
+  background-color: #fbeaec;
+}
+
+.section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.section p,
+.section ul {
+  font-size: 18px;
+  color: #444;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.skills ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills li {
+  margin: 8px 0;
+}
+
+/* Anchor offset fix (when using fixed nav) */
+section {
+  scroll-margin-top: 80px;
+}
+
+/*,,skills*/
+
+
+
+
+
+
+
+.skills {
+  background-color: #000;
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  font-size: 16px;
+  color: #aaa;
+  margin-bottom: 40px;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.skill {
+  background: transparent;
+  position: relative;
+  text-align: left;
+}
+
+.skill span {
+  font-size: 18px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 5px;
+}
+
+
+
+.progress-bar {
+  background-color: #222;
+  height: 10px;
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 5px 0 10px;
+}
+
+.progress {
+  height: 100%;
+  background-color: #e63946; /* Amber-400 like color */
+  width: 0;
+  border-radius: 20px;
+  transition: width 1.5s ease-in-out;
+}
+
+.percentage {
+  float: right;
+  font-size: 14px;
+  color: #fff;
+}
+
+/*project*/
+.projects {
+  background: #000;
+  padding: 60px 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 30px;
+}
+
+.project-card {
+  background: #1f1f1f;
+  padding: 30px;
+  border-radius: 12px;
+  width: 280px;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.project-card i {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.project-card h3 {
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+.project-card p {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.project-card a {
+  text-decoration: underline;
+  color: #ccc;
+  font-size: 14px;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  background: #e91e4d; /* highlight color */
+  color: #fff;
+}
+
+.project-card:hover a {
+  color: #fff;
+}
+
+
+
+
+.project-details {
+  display: none;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #ddd;
+  line-height: 1.5;
+  transition: all 0.3s ease;
+}
+
+.toggle-details {
+  display: inline-block;
+  margin-top: 10px;
+  color: #ccc;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.toggle-details:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+
+
+
+
+/*,,contact me...*/
+/* Contact Section Styles */
+.contact {
+  background-color: #000;
+  color: #fff;
+  padding: 70px 10%;
+  /*padding-left: 150px;*/
+  padding: 70px 10% 40px 10%; /* Balanced padding */
+}
+
+.section-title {
+  font-size: 32px;
+  margin-bottom: 40px;
+  text-align: center; /* Default center for all sections */
+}
+
+/* 👇 Only Contact section's title is left-aligned */
+.contact .section-title {
+  text-align: left;
+}
+
+
+.contact-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.contact-left {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.contact-left p {
+  font-size: 16px;
+  margin: 0 0 20px 0; /* ⬅️ Adds bottom margin for spacing */
+  
+}
+
+.contact-left i {
+  margin-right: 10px;
+  color: #e63946;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.social-icons a {
+  font-size: 20px;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #e63946;
+}
+
+.download-btn2 {
+  width: fit-content;
+  background-color: #e63946;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.download-btn2:hover {
+  background-color: #e63946;
+}
+
+.contact-right {
+  flex: 1;
+  min-width: 300px;
+  /* ⬅️ Lifts the entire right column upwards */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: -70px;
+}
+
+form input,
+form textarea {
+  background-color: #222;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+form textarea {
+  resize: vertical;
+  
+  height: 150px;
+}
+
+form .btn2 {
+  align-self: flex-start;
+  background-color: #e63946;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form .btn2:hover {
+  background-color: #e63946;
+}
+@media (max-width: 768px) {
+  .contact-wrapper {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .contact-left,
+  .contact-right {
+    width: 100%;
+  }
+
+  form {
+    margin-top: 0; /* Remove negative top margin on small screens */
+  }
+
+  form input,
+  form textarea {
+    font-size: 16px;
+  }
+
+  .btn2,
+  .download-btn2 {
+    width: 100%;
+    text-align: center;
+  }
+}
