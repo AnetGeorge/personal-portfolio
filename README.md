@@ -24,7 +24,7 @@ I built a clean and professional portfolio website using HTML and CSS, aiming to
 
 Feel free to reach out for feedback or collaboration!
 
-Email: [anet.george@email.com](mailto:anet.george@email.com)
+Email: [anetgeorgekt@email.com](mailto:anetgeorgekt@email.com)
 
 LinkedIn: [https://www.linkedin.com/in/anet-george](https://www.linkedin.com/in/anet-george)
 
