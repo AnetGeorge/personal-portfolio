@@ -9,6 +9,7 @@ I built a clean and professional portfolio website using HTML and CSS, aiming to
 
 * HTML — for page structure
 * CSS — for styling and layout
+* JavaScript — for functionality
 
 ## 🔗 Live Demo
 
