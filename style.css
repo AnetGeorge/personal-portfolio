@@ -15,6 +15,7 @@ body {
   /*position: relative;*/
   background-position: left center;
   background-size: 950px auto; /* fixed width */
+  background-repeat: no-repeat;
 
   /*background-size: 90;  or 60% if using cover crops too much ..: contain*/
 }
@@ -216,6 +217,8 @@ body {
 
 .about-text {
   max-width: 700px;
+  padding-left: 30px;
+  padding-right: 20px;
   
   
 }
@@ -242,6 +245,7 @@ body {
   margin-bottom: 30px;
   color: #d4cccce1!important;
   text-align: left;
+  
 }
 
 .about-info {
@@ -265,10 +269,14 @@ body {
   font-weight: bold;
   border-radius: 5px;
   transition: background-color 0.3s;
-  
+  display: inline-block !important; 
   
 }
-
+.btn1-wrapper {
+      text-align: left;        /* aligns content to the left */
+      padding-left: 0px;      /* optional: space from left edge */
+      margin-top: 20px;        /* optional: vertical spacing */
+    }
 .btn1:hover {
   background-color: #d62839;
 }
@@ -459,6 +467,7 @@ section {
   color: #ddd;
   line-height: 1.5;
   transition: all 0.3s ease;
+  text-align: justify;
 }
 
 .toggle-details {
